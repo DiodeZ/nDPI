@@ -102,7 +102,7 @@ typedef struct the_prefix_t {
 /* pointer to usr data (ex. route flap info) */
 union patricia_node_value_t {
   void *user_data;
-  u_int32_t user_value;
+  unsigned int user_value;
 };
 
 typedef struct _patricia_node_t {
@@ -236,7 +236,7 @@ MRT Credits
    originally written by him.
 
    Alexey Kuznetsov made enhancements to 1.4.3a and fixed the Linux
-   kernel intarface. Linux's netlink interface was written, referring to
+   kernel interface. Linux's netlink interface was written, referring to
    his code "iproute2".
 
    We would also like to thank our other colleagues in Japan, Portugal,
